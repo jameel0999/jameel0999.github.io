@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>responsive_design.html</title>
+  <style>
+    /*    when do responsive design, always mobile first*/
+    div {
+      border: solid;
+      height: 100px;
+      font-size: 80px;
+      background-color: lime;
+      margin-bottom: 30px;
+    }
+
+    @media all and (min-width:768px) {
+
+      /*      6x1 -> 3x2 */
+      div {
+        background-color: blue;
+        width: 48%;
+        display: inline-block;
+      }
+    }
+
+    @media all and (min-width: 992px) {
+      div {
+        background-color: red;
+        width: 32%;
+      }
+    }
+
+    /*    change layout to 1*6 and 
+    background-color to pink when min-width>=1200 */
+  </style>
+</head>
+
+<body>
+  <!--  a skill to display web page properly in different size of screen: tv, desktop, pad, mobile -->
+
+  <!--  main>div*6 -->
+  <main>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </main>
+  <p></p>
+</body></html>
